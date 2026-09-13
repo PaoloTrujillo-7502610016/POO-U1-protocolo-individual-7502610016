@@ -1,3 +1,5 @@
+package taller1_poo;
+
 public class Estudiante {
     String nombre;
     int edad;

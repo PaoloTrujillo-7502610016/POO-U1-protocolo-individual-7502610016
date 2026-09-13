@@ -1,3 +1,5 @@
+package taller1_poo;
+
 public class Libro {
     String titulo;
     String autor;
@@ -9,7 +11,7 @@ public class Libro {
         autor = "JK Rowling";
         numeroPaginas = 150;
     }
-    Libro libro1 = new Libro();//Instancia de la clase Libro, utilizando constructor por defecto
+    Libro libro1 = new Libro();//Instancia de la clase taller1_poo.Libro, utilizando constructor por defecto
 
     //Constructor parametrizado
     public Libro(String titulo, String autor, int numeroPaginas) {
