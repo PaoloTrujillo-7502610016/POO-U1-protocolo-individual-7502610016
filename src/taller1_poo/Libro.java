@@ -11,7 +11,6 @@ public class Libro {
         autor = "JK Rowling";
         numeroPaginas = 150;
     }
-    Libro libro1 = new Libro();//Instancia de la clase taller1_poo.Libro, utilizando constructor por defecto
 
     //Constructor parametrizado
     public Libro(String titulo, String autor, int numeroPaginas) {
@@ -19,15 +18,16 @@ public class Libro {
         this.autor = autor;
         this.numeroPaginas = numeroPaginas;
     }
-    Libro libro2 = new Libro(//Instancia de la clase libro, utilizando constructor parametrizado
-            "Cien años de soledad",
-            "Gabriel Garcia Marquez",
-            200
-    );
 
-    public void mostrarLibro() {//Metodo para mostrar detalles del libro
-        System.out.println("Titulo: " + titulo);
-        System.out.println("\nAutor: " + autor);
-        System.out.println("\nNumero de páginas: " + numeroPaginas);
+    public String mostrarLibro() {//Metodo para mostrar detalles del libro
+        System.out.print("Titulo: " + titulo);
+        System.out.print("\nAutor: " + autor);
+        System.out.print("\nNumero de páginas: " + numeroPaginas);
     }
+
+    @Override
+    public String toString() {
+        return "Titulo: " +this.titulo+ ", Autor: " +this.autor+ ", Numero de páginas: " +this.numeroPaginas;
+    }
+
 }

@@ -7,9 +7,9 @@ public class Estudiante {
 
     //Constructor por defecto
     public Estudiante(){
-        nombre = "Nombre";
-        edad = 18;
-        curso = 1;
+        nombre = "Paolo Trujillo";
+        edad = 32;
+        curso = 2;
     }
 
     //Constructor parametrizado con nombre y edad
@@ -23,5 +23,11 @@ public class Estudiante {
         this(nombre, edad);//llama al constructor anterior con los parametros nombre, edad
         this.curso = curso;
     }
+
+    @Override
+    public String toString() {
+        return "Nombre del estudiante: " +this.nombre+ ", edad: " +this.edad+ " años, curso: " +this.curso;
+    }
+
 
 }
