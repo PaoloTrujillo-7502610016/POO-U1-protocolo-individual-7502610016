@@ -19,9 +19,8 @@ public class CuentaBancaria {
     }
 
     //Contructor sobrecargado
-    public CuentaBancaria(String tipoCuenta, int numeroCuenta, double saldo) {
-        this.tipoCuenta = tipoCuenta;
-        this.numeroCuenta = numeroCuenta;
+    public CuentaBancaria(String tipoCuenta, int numeroCuenta, double saldo){
+        this(tipoCuenta, numeroCuenta);
         this.saldo = saldo;
     }
 

@@ -49,7 +49,8 @@ public class Main {
 
         //Instancia de la clase Estudiante
         System.out.print("\nIngrese el nombre del estudiante: ");
-        String nombre = entrada.next();
+        entrada.nextLine();
+        String nombre = entrada.nextLine();
         System.out.print("Ingrese la edad del estudiante: ");
         int edad = entrada.nextInt();
         System.out.print("Ingrese el curso del estudiante: ");

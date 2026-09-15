@@ -18,6 +18,12 @@ public class Estudiante {
         this.edad = edad;
     }
 
+    //Constructor parametrizado y uso de this()
+    public Estudiante(String nombre, int edad, int curso){
+        this(nombre, edad);//llama al constructor anterior con los parametros nombre, edad
+        this.curso = curso;
+    }
+
     //Getters & Setters
     public String getNombre() {//Metodo get para leer un valor de un atributo
         return nombre;
@@ -38,12 +44,6 @@ public class Estudiante {
         this.curso = curso;
     }
 
-
-    //Constructor parametrizado y uso de this()
-    public Estudiante(String nombre, int edad, int curso){
-        this(nombre, edad);//llama al constructor anterior con los parametros nombre, edad
-        this.curso = curso;
-    }
 
     @Override//Notacion override para identificar que se esta escribiendo este metodo de una clase padre
     public String toString() {//Este metodo manda a imprimir los valores de los atributos de la clase
