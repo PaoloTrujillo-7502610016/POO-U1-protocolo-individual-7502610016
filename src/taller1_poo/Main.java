@@ -21,12 +21,14 @@ public class Main {
         Estudiante estudiante1 = new Estudiante();
 
         libro1.mostrarLibro();//Metodo de la clase Libro que muestra en pantalla los detalles del libro1
-        System.out.println("Cuenta bancaria: "+cuentaBancaria1.numeroCuenta+", saldo: $"+cuentaBancaria1.saldo+", tipo de cuenta: "+cuentaBancaria1.tipoCuenta);
-        System.out.println("Estudiante: "+estudiante1.nombre+", edad: "+estudiante1.edad+" años, curso: "+estudiante1.curso);
+        System.out.println("Cuenta bancaria: "+cuentaBancaria1.getNumeroCuenta()+", saldo: $"+cuentaBancaria1.getSaldo()+", tipo de cuenta: "+cuentaBancaria1.getTipoCuenta());
+        System.out.println("Estudiante: "+estudiante1.getNombre()+", edad: "+estudiante1.getEdad()+" años, curso: "+estudiante1.getCurso());
+        //Se utiliza el metodo get para leer el valor del atributo de la instancia.
 
         //Inicializacion de objetos con entrada de datos.
         Scanner entrada = new Scanner(System.in);
         System.out.println("\n2. Objetos de las clases con entrada de datos. Ingrese los siguientes datos:\n");
+
             //Instancia de la clase Libro
         System.out.print("Ingrese el titulo del libro: ");
         String titulo = entrada.nextLine();
@@ -56,9 +58,9 @@ public class Main {
         entrada.close();
 
         System.out.println("\nLos datos ingresados son:");
-        System.out.println("Libro: "+libro2.titulo+", autor: "+libro2.autor+", paginas: "+libro2.numeroPaginas);
-        System.out.println("Cuenta: "+cuentaBancaria2.numeroCuenta+", tipo de cuenta: "+cuentaBancaria2.tipoCuenta+", saldo: $"+cuentaBancaria2.saldo);
-        System.out.println("Estudiante: "+estudiante2.nombre+", edad: "+estudiante2.edad+" años, curso: "+estudiante2.curso);
+        System.out.println("Libro: "+libro2.getTitulo()+", autor: "+libro2.getAutor()+", paginas: "+libro2.getNumeroPaginas());
+        System.out.println("Cuenta: "+cuentaBancaria2.getNumeroCuenta()+", tipo de cuenta: "+cuentaBancaria2.getTipoCuenta()+", saldo: $"+cuentaBancaria2.getSaldo());
+        System.out.println("Estudiante: "+estudiante2.getNombre()+", edad: "+estudiante2.getEdad()+" años, curso: "+estudiante2.getCurso());
 
         //Detalles de los objetos con toString():
         System.out.println("\n3. Detalle de los objetos con el metodo toString:\n");

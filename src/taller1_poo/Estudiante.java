@@ -1,9 +1,9 @@
 package taller1_poo;
 
 public class Estudiante {
-    String nombre;
-    int edad;
-    int curso;
+    private String nombre;
+    private int edad;
+    private int curso;
 
     //Constructor por defecto
     public Estudiante(){
@@ -18,6 +18,27 @@ public class Estudiante {
         this.edad = edad;
     }
 
+    //Getters & Setters
+    public String getNombre() {//Metodo get para leer un valor de un atributo
+        return nombre;
+    }
+    public void setNombre(String nombre) {//Metodo set para modificar el valor de un atributo
+        this.nombre = nombre;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public int getCurso() {
+        return curso;
+    }
+    public void setCurso(int curso) {
+        this.curso = curso;
+    }
+
+
     //Constructor parametrizado y uso de this()
     public Estudiante(String nombre, int edad, int curso){
         this(nombre, edad);//llama al constructor anterior con los parametros nombre, edad
@@ -25,7 +46,7 @@ public class Estudiante {
     }
 
     @Override//Notacion override para identificar que se esta escribiendo este metodo de una clase padre
-    public String toString() {
+    public String toString() {//Este metodo manda a imprimir los valores de los atributos de la clase
         return "Nombre del estudiante: " +this.nombre+ ", edad: " +this.edad+ " años, curso: " +this.curso;
     }
 
