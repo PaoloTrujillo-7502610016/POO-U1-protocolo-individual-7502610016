@@ -25,7 +25,7 @@ public class CuentaBancaria {
         this.saldo = saldo;
     }
 
-    @Override
+    @Override//Notacion override para identificar que se esta escribiendo este metodo de una clase padre
     public String toString() {
         return "Tipo de Cuenta: " +this.tipoCuenta+ ", Numero de cuenta: " +this.numeroCuenta+ ", Saldo: $" +this.saldo;
     }

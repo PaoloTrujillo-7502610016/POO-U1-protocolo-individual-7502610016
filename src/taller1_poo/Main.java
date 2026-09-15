@@ -20,7 +20,7 @@ public class Main {
         CuentaBancaria cuentaBancaria1 = new CuentaBancaria();
         Estudiante estudiante1 = new Estudiante();
 
-        System.out.println("Libro: "+libro1.titulo+", autor: "+libro1.autor+", paginas: "+libro1.numeroPaginas);
+        libro1.mostrarLibro();//Metodo de la clase Libro que muestra en pantalla los detalles del libro1
         System.out.println("Cuenta bancaria: "+cuentaBancaria1.numeroCuenta+", saldo: $"+cuentaBancaria1.saldo+", tipo de cuenta: "+cuentaBancaria1.tipoCuenta);
         System.out.println("Estudiante: "+estudiante1.nombre+", edad: "+estudiante1.edad+" años, curso: "+estudiante1.curso);
 

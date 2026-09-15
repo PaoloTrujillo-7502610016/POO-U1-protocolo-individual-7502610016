@@ -19,13 +19,11 @@ public class Libro {
         this.numeroPaginas = numeroPaginas;
     }
 
-    public String mostrarLibro() {//Metodo para mostrar detalles del libro
-        System.out.print("Titulo: " + titulo);
-        System.out.print("\nAutor: " + autor);
-        System.out.print("\nNumero de páginas: " + numeroPaginas);
+    public void mostrarLibro() {//Metodo para mostrar detalles del libro
+        System.out.println("Libro: "+titulo+", autor: "+autor+", paginas: "+numeroPaginas);
     }
 
-    @Override
+    @Override //Notacion override para identificar que se esta escribiendo este metodo de una clase padre
     public String toString() {
         return "Titulo: " +this.titulo+ ", Autor: " +this.autor+ ", Numero de páginas: " +this.numeroPaginas;
     }

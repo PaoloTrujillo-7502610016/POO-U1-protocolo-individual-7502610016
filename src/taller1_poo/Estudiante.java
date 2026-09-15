@@ -24,7 +24,7 @@ public class Estudiante {
         this.curso = curso;
     }
 
-    @Override
+    @Override//Notacion override para identificar que se esta escribiendo este metodo de una clase padre
     public String toString() {
         return "Nombre del estudiante: " +this.nombre+ ", edad: " +this.edad+ " años, curso: " +this.curso;
     }
